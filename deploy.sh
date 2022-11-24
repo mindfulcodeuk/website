@@ -8,5 +8,5 @@ cd build
 git init
 git add .
 git commit -m "deploying to gh-pages"
-git remote add origin git@github.com:mindfulcodeuk/website.git
+git remote add origin https://github.com/mindfulcodeuk/website.git
 git push --force origin master:gh-pages
