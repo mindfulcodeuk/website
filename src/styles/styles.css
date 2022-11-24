@@ -141,11 +141,6 @@ ul {
     max-height: 145px;
     margin-bottom: 20px;
     object-fit: cover;
-
-    /* width: auto;
-    max-width: 150px;
-    height: auto;
-    max-height: 100px; */
 }
 
 .home-cards h3 {
@@ -164,24 +159,24 @@ ul {
     margin-left: 10px;
 }
 
-/* Xbox */
-.xbox {
+/* Collaborators */
+.collaborators {
     width: 100%;
     height: 350px;
-    background: url("../assets/clients.jpg") no-repeat center center/cover;
+    background: url("../assets/clients-large.jpg") no-repeat center center/cover;
     margin-bottom: 20px;
 }
 
-.xbox .content {
+.collaborators .content {
     width: 40%;
     padding: 50px 0 0 30px;
 }
 
-.xbox .content p {
+.collaborators .content p {
     font-size: 17px;
 }
 
-.xbox p,
+.collaborators p,
 .carbon p {
     margin: 10px 0 20px;
 }
@@ -228,7 +223,7 @@ ul {
     grid-gap: 10px;
     align-items: flex-start;
     justify-content: center;
-    justify-items: center;
+    /* justify-items: center; */
 }
 
 .links li {
@@ -270,6 +265,34 @@ ul {
 .footer li {
     margin-right: 30px;
     margin-bottom: 20px;
+}
+
+@media (max-width: 1050px) {
+    .collaborators {
+        height: 280px;
+    }
+}
+
+@media (max-width: 880px) {
+    .collaborators {
+        width: 100%;
+        height: 350px;
+        background: url("../assets/clients-small.png") no-repeat center
+            center/cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: flex-end;
+        padding-bottom: 80px;
+        margin-bottom: 20px;
+        color: black;
+    }
+
+    .collaborators .content {
+        width: 100%;
+        padding: 0;
+    }
 }
 
 @media (max-width: 700px) {
@@ -336,6 +359,10 @@ ul {
 }
 
 @media (max-width: 500px) {
+    .main-nav .logo {
+        width: 280px;
+    }
+
     .home-cards {
         grid-template-columns: 1fr;
     }
